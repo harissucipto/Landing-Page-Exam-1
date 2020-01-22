@@ -4,6 +4,7 @@ import HeroShot from "../components/HeroShot";
 import HighlightsPanel from "../components/HighlightsPanel";
 import Footer from "../components/Footer";
 import "./HomePage.css";
+import NewsletterPanel from "../components/NewsletterPanel";
 
 export const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ export const HomePage = () => {
       </div>
       <HighlightsPanel />
       <Footer />
+      <NewsletterPanel />
     </div>
   );
 };
