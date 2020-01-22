@@ -1,9 +1,10 @@
 .highlights-panel {
   background-color: var(--color-grey-light);
+  padding-bottom: 3.6rem;
+  padding-top: 7.5rem;
 }
 
 .highlights-title {
-  padding-top: 7.5rem;
   max-width: 70rem;
   margin: 0 auto;
   text-align: center;
@@ -25,7 +26,8 @@
 
 .highlight-list-container {
   margin-left: 30px;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   display: flex;
   flex-wrap: wrap;
+  /* border: 2px solid black; */
 }

@@ -38,6 +38,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   outline: none;
+  border-radius: 2px;
 }
 
 .button-hero-shot:hover {

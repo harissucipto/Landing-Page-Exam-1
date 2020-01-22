@@ -1,10 +1,11 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <footer>
       <p>&copy; 2020 Haris Sucipto. All rights reserved.​</p>
-    </div>
+    </footer>
   );
 };
 

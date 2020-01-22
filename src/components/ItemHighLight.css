@@ -1,7 +1,12 @@
 .item-high-light {
-  padding-top: 2.8rem;
-  border: 1px solid #acacac;
+  margin-bottom: 30px;
+}
+
+.item-content {
   font-size: 1.3rem;
+  margin-right: 30px;
+  border: 1px solid #acacac;
+  height: 17.8rem;
 }
 
 .item-title {
@@ -33,9 +38,9 @@
     width: 100%;
     height: 30rem;
     font-size: 1.5rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
-    background-color: blue;
+    /* padding-right: 4rem;
+    padding-left: 4rem; */
+    /* background-color: blue; */
   }
 }
 
@@ -44,8 +49,8 @@
     width: 50%;
     /* height: 30rem; */
     font-size: 1.5rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    /* padding-right: 4rem;
+    padding-left: 4rem; */
   }
 }
 
@@ -53,9 +58,9 @@
   .item-high-light {
     width: 33.333%;
     font-size: 1.5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    /* padding-bottom: 2rem;
+    margin-bottom: 1rem; */
   }
 }

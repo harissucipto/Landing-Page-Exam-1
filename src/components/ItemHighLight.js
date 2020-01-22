@@ -6,7 +6,7 @@ import "./ItemHighLight.css";
 const ItemHighLight = ({ icon, title, description }) => {
   return (
     <div className="item-high-light">
-      <div style={{ border: "1px solid black" }}>
+      <div className="item-content">
         <div>
           <p className="item-title">{title}</p>
           <p>{icon}</p>
