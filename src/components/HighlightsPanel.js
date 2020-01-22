@@ -1,5 +1,6 @@
 import React from "react";
 import ItemHighLight from "./ItemHighLight";
+import "./HighlightsPanel.css";
 
 const listContent = [
   {
@@ -42,14 +43,16 @@ const listContent = [
 
 const HighlightsPanel = () => {
   return (
-    <div>
-      <p>How Can I Help You?</p>
-      <p>
-        Our work then targeted, best practices outcomes social innovation
-        synergy. Venture philanthropy, revolutionary inclusive policymaker
-        relief. User-centered program areas scale
-      </p>
-      <div>
+    <div className="highlights-panel">
+      <div className="highlights-title">
+        <p className="h1-g">How Can I Help You?</p>
+        <p className="h3-g">
+          Our work then targeted, best practices outcomes social innovation
+          synergy. Venture philanthropy, revolutionary inclusive policymaker
+          relief. User-centered program areas scale
+        </p>
+      </div>
+      <div className="highlight-list-container">
         {listContent.map((item, index) => (
           <ItemHighLight key={`highlight${index + 1}`} {...item} />
         ))}

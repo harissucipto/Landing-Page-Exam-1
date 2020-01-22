@@ -1,0 +1,46 @@
+.hero-shot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  max-height: 50rem;
+  margin-top: -1.5rem;
+}
+
+.h1 {
+  font-size: 3.6rem;
+  color: white;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
+
+.h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.button-hero-shot {
+  cursor: pointer;
+  background-color: transparent;
+  width: 22.6rem;
+  height: 5.7rem;
+  font-size: 1.6rem;
+  color: white;
+  border: 1px solid white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.button-hero-shot:hover {
+  background-color: white;
+  color: var(--color-primary-dark);
+}

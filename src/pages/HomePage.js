@@ -3,11 +3,12 @@ import Header from "../components/Header";
 import HeroShot from "../components/HeroShot";
 import HighlightsPanel from "../components/HighlightsPanel";
 import Footer from "../components/Footer";
+import "./HomePage.css";
 
 export const HomePage = () => {
   return (
-    <div>
-      <div>
+    <div className="wrapper">
+      <div className="background-header">
         <Header />
         <HeroShot />
       </div>

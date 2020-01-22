@@ -1,0 +1,14 @@
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.background-header {
+  background: linear-gradient(rgba(0, 74, 117, 0.5), rgba(0, 74, 117, 0.5)),
+    url("../img/work-desk__dustin-lee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  height: 60rem;
+}
