@@ -64,3 +64,13 @@
     margin-bottom: 1rem; */
   }
 }
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-item {
+  font-size: 2.3rem;
+  color: var(--color-grey-dark);
+}

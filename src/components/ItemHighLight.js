@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./ItemHighLight.css";
 
@@ -7,9 +8,9 @@ const ItemHighLight = ({ icon, title, description }) => {
   return (
     <div className="item-high-light">
       <div className="item-content">
-        <div>
+        <div className="item-header">
           <p className="item-title">{title}</p>
-          <p>{icon}</p>
+          <FontAwesomeIcon icon={icon} className="icon-item" />
         </div>
         <p>{description}</p>
       </div>
@@ -18,7 +19,7 @@ const ItemHighLight = ({ icon, title, description }) => {
 };
 
 ItemHighLight.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired
 };
