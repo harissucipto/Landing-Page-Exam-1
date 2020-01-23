@@ -1,0 +1,60 @@
+.notificationPanel {
+  background-color: var(--color-grey-light);
+  color: var(--color-grey-dark);
+  font-size: 1.5rem;
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  z-index: 3;
+  top: 0;
+  padding: 1.85rem;
+}
+
+.notification {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.notifcation-button {
+  display: block;
+  width: 8rem;
+  height: 4.2rem;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  color: var(--color-grey-light);
+  border-radius: 2px;
+  background-color: var(--color-primary);
+  margin-top: 0.7rem;
+}
+
+.notification-text {
+  max-width: 64rem;
+  padding-right: 3.9rem;
+}
+
+@media only screen and (max-width: 360px) {
+  .notification-text {
+    font-size: 1.05rem;
+  }
+
+  .notifcation-button {
+    height: 3rem;
+    margin-top: 1rem;
+    width: 5.4rem;
+  }
+}
+
+/*
+
+@media only screen and (min-width: 480px) {
+  .notificationPanel {
+  }
+
+  .notifcation-button {
+    width: 8rem;
+    height: 4.2rem;
+  }
+} */
