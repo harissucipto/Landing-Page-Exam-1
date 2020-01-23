@@ -3,7 +3,7 @@
   bottom: 0;
   background-color: rgba(0, 123, 193, 0.9);
   max-width: 640px;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 0rem 3rem 3rem 3rem;
   z-index: 2;
 }
 
@@ -72,4 +72,21 @@
     display: flex;
     flex: 1;
   }
+}
+
+.close-div {
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.close-button {
+  margin-top: 1rem;
+  margin-right: -12px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 1.6rem;
 }

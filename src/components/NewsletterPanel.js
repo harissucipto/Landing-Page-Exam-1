@@ -4,6 +4,9 @@ import "./newsletterPanel.css";
 const NewsletterPanel = () => {
   return (
     <div className="newsletter-panel">
+      <div className="close-div">
+        <button className="close-button">x</button>
+      </div>
       <p className="h1-p">Get latest updates in web technologies</p>
       <p className="h2-p">
         I write articles related to web technologies, such as design trends,
