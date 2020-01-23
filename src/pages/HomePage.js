@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import useDimensions from "react-use-dimensions";
 
 import "./HomePage.css";
@@ -11,20 +11,27 @@ import NotificationPanel from "../components/NotificationPanel";
 
 export const HomePage = () => {
   const [notifRef, { height }] = useDimensions();
+  const [isNotfiOpen, setIsNotfiOpen] = useState(true);
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(true);
 
   return (
     <div className="wrapper">
-      {<NotificationPanel ref={notifRef} />}
+      {isNotfiOpen && (
+        <NotificationPanel ref={notifRef} setIsOpen={setIsNotfiOpen} />
+      )}
       <div
         className="background-header"
-        style={{ marginTop: `${height}px`, position: "relative" }}
+        style={{
+          marginTop: isNotfiOpen ? `${height}px` : 0,
+          position: "relative"
+        }}
       >
         <Header />
         <HeroShot />
       </div>
       <HighlightsPanel />
       <Footer />
-      <NewsletterPanel />
+      {isNewsletterOpen && <NewsletterPanel setIsOpen={setIsNewsletterOpen} />}
     </div>
   );
 };

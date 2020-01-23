@@ -1,11 +1,13 @@
 import React from "react";
 import "./newsletterPanel.css";
 
-const NewsletterPanel = () => {
+const NewsletterPanel = ({ setIsOpen }) => {
   return (
     <div className="newsletter-panel">
       <div className="close-div">
-        <button className="close-button">x</button>
+        <button className="close-button" onClick={() => setIsOpen(false)}>
+          x
+        </button>
       </div>
       <p className="h1-p">Get latest updates in web technologies</p>
       <p className="h2-p">

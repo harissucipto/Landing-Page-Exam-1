@@ -2,6 +2,8 @@ import React, { forwardRef } from "react";
 import "./notificationPanel.css";
 
 const NotificationPanel = forwardRef((props, ref) => {
+  const { setIsOpen } = props;
+
   return (
     <div className="notificationPanel" ref={ref}>
       <div className="notification">
@@ -10,7 +12,9 @@ const NotificationPanel = forwardRef((props, ref) => {
           read and understand our Cookie Policy, Privacy Policy, and our Terms
           of Service.
         </p>
-        <button className="notifcation-button">Got it</button>
+        <button className="notifcation-button" onClick={() => setIsOpen(false)}>
+          Got it
+        </button>
       </div>
     </div>
   );
