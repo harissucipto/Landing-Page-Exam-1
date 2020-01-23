@@ -1,4 +1,5 @@
 import React from "react";
+import useDimensions from "react-use-dimensions";
 
 import "./HomePage.css";
 import Header from "../components/Header";
@@ -9,12 +10,14 @@ import NewsletterPanel from "../components/NewsletterPanel";
 import NotificationPanel from "../components/NotificationPanel";
 
 export const HomePage = () => {
+  const [notifRef, { height }] = useDimensions();
+
   return (
     <div className="wrapper">
-      <NotificationPanel />
+      {<NotificationPanel ref={notifRef} />}
       <div
         className="background-header"
-        style={{ marginTop: "8.5rem", position: "relative" }}
+        style={{ marginTop: `${height}px`, position: "relative" }}
       >
         <Header />
         <HeroShot />

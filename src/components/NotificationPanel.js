@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./notificationPanel.css";
 
-const NotificationPanel = () => {
+const NotificationPanel = forwardRef((props, ref) => {
   return (
-    <div className="notificationPanel">
+    <div className="notificationPanel" ref={ref}>
       <div className="notification">
         <p className="notification-text">
           By accessing and using this website, you acknowledge that you have
@@ -14,6 +14,6 @@ const NotificationPanel = () => {
       </div>
     </div>
   );
-};
+});
 
 export default NotificationPanel;

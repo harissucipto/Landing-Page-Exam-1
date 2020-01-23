@@ -9,6 +9,7 @@
   min-height: 17.8rem;
   color: var(--color-grey-dark);
   padding: 2rem;
+  height: 100%;
 }
 
 .item-title {
