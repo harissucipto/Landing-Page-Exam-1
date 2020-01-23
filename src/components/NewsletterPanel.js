@@ -10,7 +10,7 @@ const NewsletterPanel = () => {
         development tools, UI/UX case studies and reviews, and more. Sign up to
         my newsletter to get them all.
       </p>
-      <form className="form-p">
+      <form className="form-p" onSubmit={e => e.preventDefault()}>
         <input
           type="email"
           placeholder="Email address"
