@@ -11,18 +11,12 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
-    "react-bottom-scroll-listener": "^3.0.0",
-    "react-countdown-hook": "^0.1.1",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
-    "react-slide-toggle": "^0.3.3",
     "react-slidedown": "^2.4.5",
-    "react-transition-group": "^4.3.0",
     "react-use-dimensions": "^1.2.1",
     "react-use-localstorage": "^3.4.1",
-    "react-use-scroll": "^1.0.3",
-    "react-use-scroll-position": "^2.0.0",
-    "react-use-window-size": "^1.0.1"
+    "react-use-scroll-position": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
