@@ -1,11 +1,19 @@
 import React, { forwardRef } from "react";
+import SlideDown from "react-slidedown";
+import "react-slidedown/lib/slidedown.css";
+
 import "./notificationPanel.css";
 
 const NotificationPanel = forwardRef((props, ref) => {
-  const { setIsOpen } = props;
+  const { setIsOpen, isOpen } = props;
 
   return (
-    <div className="notificationPanel" ref={ref}>
+    <SlideDown
+      className={"dropdown-panel notificationPanel"}
+      ref={ref}
+      closed={!isOpen}
+      transitionOnAppear={false}
+    >
       <div className="notification">
         <p className="notification-text">
           By accessing and using this website, you acknowledge that you have
@@ -16,7 +24,7 @@ const NotificationPanel = forwardRef((props, ref) => {
           Got it
         </button>
       </div>
-    </div>
+    </SlideDown>
   );
 });
 
