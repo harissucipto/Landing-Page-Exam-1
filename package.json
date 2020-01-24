@@ -6,13 +6,21 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
+    "react-bottom-scroll-listener": "^3.0.0",
+    "react-countdown-hook": "^0.1.1",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
-    "react-use-dimensions": "^1.2.1"
+    "react-slide-toggle": "^0.3.3",
+    "react-use-dimensions": "^1.2.1",
+    "react-use-localstorage": "^3.4.1",
+    "react-use-scroll": "^1.0.3",
+    "react-use-scroll-position": "^2.0.0",
+    "react-use-window-size": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +42,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.x",
+    "@typescript-eslint/parser": "2.x",
+    "babel-eslint": "10.x",
+    "eslint": "6.x",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x"
   }
 }

@@ -1,8 +1,8 @@
 .newsletter-panel {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: rgba(0, 123, 193, 0.9);
-  max-width: 640px;
+  max-width: 64rem;
   padding: 0rem 3rem 3rem 3rem;
   z-index: 2;
 }
