@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import NewsletterPanel from "../components/NewsletterPanel";
 import NotificationPanel from "../components/NotificationPanel";
 
-const initialTime = 10 * 1000;
+const initialTime = 10 * 1000; // 10 minutes
 const Event1 = "scroll";
 const Event2 = "countDown";
 
