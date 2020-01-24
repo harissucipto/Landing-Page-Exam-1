@@ -57,7 +57,7 @@ export const HomePage = () => {
     }
   }, [setIsOpenPanelN, ToggleEvent2, ToggleEvent3, typeActiveEvent]);
 
-  // reset local
+  // reset local storage
   // useEffect(() => {
   //   setIsOpenPanelN(false);
   //   setTypeActiveEvent(Event1);
@@ -82,9 +82,11 @@ export const HomePage = () => {
 
   return (
     <div className="wrapper" ref={pageRef}>
-      {isNotfiOpen && (
-        <NotificationPanel ref={notifRef} setIsOpen={setIsNotfiOpen} />
-      )}
+      <NotificationPanel
+        ref={notifRef}
+        setIsOpen={setIsNotfiOpen}
+        isOpen={isNotfiOpen}
+      />
       <div
         className="background-header"
         style={{
@@ -97,7 +99,7 @@ export const HomePage = () => {
       </div>
       <HighlightsPanel />
       <Footer />
-      {isOpenPanelN && <NewsletterPanel setIsOpen={handleClosePanelN} />}
+      <NewsletterPanel setIsOpen={handleClosePanelN} isOpen={isOpenPanelN} />
     </div>
   );
 };

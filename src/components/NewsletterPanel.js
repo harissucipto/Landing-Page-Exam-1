@@ -1,9 +1,11 @@
 import React from "react";
 import "./newsletterPanel.css";
+import SlideDown from "react-slidedown";
+import "react-slidedown/lib/slidedown.css";
 
-const NewsletterPanel = ({ setIsOpen }) => {
+const NewsletterPanel = ({ setIsOpen, isOpen }) => {
   return (
-    <div className="newsletter-panel">
+    <SlideDown className={"dropdown-panel newsletter-panel"} closed={!isOpen}>
       <div className="close-div">
         <button className="close-button" onClick={() => setIsOpen(false)}>
           x
@@ -23,7 +25,7 @@ const NewsletterPanel = ({ setIsOpen }) => {
         />
         <input type="submit" value="Count me in!" className="button-p" />
       </form>
-    </div>
+    </SlideDown>
   );
 };
 
